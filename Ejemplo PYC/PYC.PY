@@ -7,7 +7,7 @@ class Pila:
         self.cartas = []
 
     def push(self, carta):
-        """Agrega una carta al montón de descarte."""
+        """Agrega una carta al monton de descarte."""
         self.cartas.append(carta)
 
     def pop(self):
@@ -30,7 +30,7 @@ class Cola:
         self.cartas.append(carta)
 
     def dequeue(self):
-        """Roba la carta mas antigua del mazo."""
+        """Roba la carta más antigua del mazo."""
         return self.cartas.pop(0) if not self.isEmpty() else None
 
     def isEmpty(self):
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         mazo.enqueue(carta)
     
     mazo.mezclar()
-    print("Mazo mezclado.")
+    print(" Mazo mezclado.")
 
     # Jugadores roban 3 cartas y las descartan
     for turno in range(3):
@@ -65,5 +65,5 @@ if __name__ == "__main__":
             print(f"Jugador roba: {carta}")
             descarte.push(carta)
             print(f"Descartada: {carta}")
-    
-    print(f"Carta en la cima del monton de descarte: {descarte.mostrar()}")
+
+    print(f" Carta en la cima del monton de descarte: {descarte.mostrar()}")
